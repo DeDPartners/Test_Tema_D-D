@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_partners" model="ir.ui.view">
+    <field name="name">DED Partners/Clients</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_partners</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_partners oe_structure" style="padding:4rem 0;background:var(--ded-bg-mid);border-top:1px solid rgba(255,255,255,.06);"
+                 data-snippet="s_ded_partners" data-name="DED Partners">
+            <div class="container">
+                <p class="text-center font-mono mb-4" style="color:rgba(255,255,255,.3);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;">
+                    // Clienti &amp; Partner
+                </p>
+                <div class="ded-marquee-wrap">
+                    <div class="ded-marquee">
+                        <span class="tech-badge">🏛️ Regione Veneto</span>
+                        <span class="tech-badge">🎓 Università di Padova</span>
+                        <span class="tech-badge">🏘️ Comune di Fara San Martino</span>
+                        <span class="tech-badge">🏙️ Castiglione Messer Marino</span>
+                        <span class="tech-badge">🏢 IACP</span>
+                        <span class="tech-badge">🌊 internomare.it</span>
+                        <span class="tech-badge">🏪 Stadea</span>
+                        <span class="tech-badge">⚙️ Odoo Partner</span>
+                        <!-- Duplicate for seamless loop -->
+                        <span class="tech-badge">🏛️ Regione Veneto</span>
+                        <span class="tech-badge">🎓 Università di Padova</span>
+                        <span class="tech-badge">🏘️ Comune di Fara San Martino</span>
+                        <span class="tech-badge">🏙️ Castiglione Messer Marino</span>
+                        <span class="tech-badge">🏢 IACP</span>
+                        <span class="tech-badge">🌊 internomare.it</span>
+                        <span class="tech-badge">🏪 Stadea</span>
+                        <span class="tech-badge">⚙️ Odoo Partner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>

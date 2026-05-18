@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================
+         HEADER - Dark Glassmorphism Navbar
+         ============================================================ -->
+    <template id="ded_header" inherit_id="website.layout" name="D&amp;D Header">
+        <xpath expr="//header" position="attributes">
+            <attribute name="class" add="ded-header" separator=" "/>
+        </xpath>
+    </template>
+
+    <!-- ============================================================
+         FOOTER - Dark with Contact Info
+         ============================================================ -->
+    <template id="template_footer_contact" inherit_id="website.template_footer_contact"
+              name="D&amp;D Footer" active="True">
+        <xpath expr="//footer" position="attributes">
+            <attribute name="class" add="ded-footer" separator=" "/>
+        </xpath>
+        <xpath expr="//footer" position="inside">
+            <t t-call="theme_ded_partners.footer_content"/>
+        </xpath>
+    </template>
+
+    <!-- Footer Content -->
+    <template id="footer_content" name="D&amp;D Footer Content">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Brand col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-4">
+                        <img src="/web/image/website.logo" alt="D&amp;D Partners" style="max-height:52px; filter:brightness(1.2);" class="mb-3"/>
+                        <p style="color:rgba(255,255,255,.55); font-size:.9375rem; line-height:1.7;">
+                            IT Partner per Aziende e Pubbliche Amministrazioni.<br/>
+                            Sviluppo Software · AI Agents · Odoo Partner
+                        </p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="https://www.linkedin.com/company/dedpartners/" class="social-link" aria-label="LinkedIn" target="_blank">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a href="https://github.com/DeDPartners" class="social-link" aria-label="GitHub" target="_blank">
+                            <i class="fa fa-github"/>
+                        </a>
+                        <a href="https://www.facebook.com/" class="social-link" aria-label="Facebook" target="_blank">
+                            <i class="fa fa-facebook"/>
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-link" aria-label="YouTube" target="_blank">
+                            <i class="fa fa-youtube"/>
+                        </a>
+                    </div>
+                </div>
+                <!-- Services col -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white fw-700 mb-3" style="letter-spacing:.05em; text-transform:uppercase; font-size:.8125rem;">Services</h6>
+                    <ul class="list-unstyled" style="line-height:2;">
+                        <li><a href="/services">AI Agent Solutions</a></li>
+                        <li><a href="/services">Software Development</a></li>
+                        <li><a href="/services">Web &amp; Mobile Apps</a></li>
+                        <li><a href="/services">Odoo Implementation</a></li>
+                        <li><a href="/services">Healthcare IT</a></li>
+                        <li><a href="/services">Public Administration</a></li>
+                    </ul>
+                </div>
+                <!-- Company col -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white fw-700 mb-3" style="letter-spacing:.05em; text-transform:uppercase; font-size:.8125rem;">Company</h6>
+                    <ul class="list-unstyled" style="line-height:2;">
+                        <li><a href="/about">Chi Siamo</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contatti</a></li>
+                        <li><a href="/certifications">Certificazioni ISO</a></li>
+                    </ul>
+                </div>
+                <!-- Contact col -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-white fw-700 mb-3" style="letter-spacing:.05em; text-transform:uppercase; font-size:.8125rem;">Contatti</h6>
+                    <ul class="list-unstyled" style="color:rgba(255,255,255,.55); line-height:2.2;">
+                        <li>
+                            <i class="fa fa-map-marker me-2" style="color:var(--ded-orange);"/>
+                            St. Guido Rossa 8, 35020 Padova (PD), Italia
+                        </li>
+                        <li>
+                            <i class="fa fa-phone me-2" style="color:var(--ded-orange);"/>
+                            <a href="tel:+390490962657">049 0962657</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-mobile me-2" style="color:var(--ded-orange);"/>
+                            <a href="tel:+393802104571">+39 380 2104571</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope me-2" style="color:var(--ded-orange);"/>
+                            <a href="mailto:info@dedpartners.com">info@dedpartners.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o me-2" style="color:var(--ded-orange);"/>
+                            <a href="mailto:dedpartners@pec.it">dedpartners@pec.it</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color:rgba(255,255,255,.08); margin:2.5rem 0;"/>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" style="color:rgba(255,255,255,.35); font-size:.875rem;">
+                        © <t t-esc="datetime.datetime.now().year"/> D&amp;D Partners S.r.l. — Tutti i diritti riservati.
+                        P.IVA: IT05355160283
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="/privacy-policy" style="color:rgba(255,255,255,.35); font-size:.875rem; margin-right:1.5rem;">Privacy Policy</a>
+                    <a href="/cookie-policy" style="color:rgba(255,255,255,.35); font-size:.875rem; margin-right:1.5rem;">Cookie Policy</a>
+                    <a href="/certifications" style="color:rgba(255,255,255,.35); font-size:.875rem;">Certificazioni ISO</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</odoo>

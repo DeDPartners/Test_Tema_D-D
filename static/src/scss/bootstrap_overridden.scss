@@ -1,0 +1,39 @@
+// ============================================================
+// D&D Partners - Bootstrap Overrides
+// ============================================================
+
+// Border radius tokens
+$border-radius:     .5rem;
+$border-radius-sm:  .375rem;
+$border-radius-lg:  .75rem;
+$border-radius-xl:  1rem;
+$border-radius-xxl: 1.5rem;
+$border-radius-pill: 50rem;
+
+// Shadows
+$box-shadow:    0 4px 24px rgba(27, 60, 115, .10);
+$box-shadow-sm: 0 2px 8px  rgba(27, 60, 115, .08);
+$box-shadow-lg: 0 8px 48px rgba(27, 60, 115, .16);
+
+// Navbar
+$navbar-padding-y: .75rem;
+$navbar-nav-link-padding-x: 1rem;
+
+// Card
+$card-border-radius: $border-radius-lg;
+$card-border-width: 0;
+$card-box-shadow: $box-shadow;
+
+// Transitions
+$transition-base: all .25s cubic-bezier(.4, 0, .2, 1);
+$transition-fade: opacity .2s cubic-bezier(.4, 0, .2, 1);
+
+// Grid breakpoints (unchanged but explicit)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

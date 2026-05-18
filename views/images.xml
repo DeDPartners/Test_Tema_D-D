@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Theme preview images -->
+    <record id="ded_hero_default_image" model="website.attachment">
+        <field name="name">DED Hero Default Image</field>
+        <field name="key">theme_ded_partners.ded_hero_default_image</field>
+        <field name="url">/theme_ded_partners/static/src/img/snippets/hero_bg.webp</field>
+    </record>
+    <record id="ded_about_default_image" model="website.attachment">
+        <field name="name">DED About Default Image</field>
+        <field name="key">theme_ded_partners.ded_about_default_image</field>
+        <field name="url">/theme_ded_partners/static/src/img/snippets/about_bg.webp</field>
+    </record>
+</odoo>

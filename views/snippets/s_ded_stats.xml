@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_stats" model="ir.ui.view">
+    <field name="name">DED Stats Counter</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_stats</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_stats oe_structure" style="padding:3rem 0;background:var(--ded-bg-mid);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);"
+                 data-snippet="s_ded_stats" data-name="DED Contatori">
+            <div class="container">
+                <div class="row ded-stats">
+                    <div class="col-6 col-md-3 ded-stat-item">
+                        <div class="stat-number" data-count="50" data-count-suffix="+">50+</div>
+                        <div class="stat-label">Progetti Completati</div>
+                    </div>
+                    <div class="col-6 col-md-3 ded-stat-item">
+                        <div class="stat-number" data-count="98" data-count-suffix="%">98%</div>
+                        <div class="stat-label">Clienti Soddisfatti</div>
+                    </div>
+                    <div class="col-6 col-md-3 ded-stat-item">
+                        <div class="stat-number" data-count="4" data-count-suffix=" ISO">4 ISO</div>
+                        <div class="stat-label">Certificazioni</div>
+                    </div>
+                    <div class="col-6 col-md-3 ded-stat-item">
+                        <div class="stat-number" data-count="2023">2023</div>
+                        <div class="stat-label">Anno di Fondazione</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>

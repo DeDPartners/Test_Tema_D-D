@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_portfolio" model="ir.ui.view">
+    <field name="name">DED Portfolio Grid</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_portfolio</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_portfolio ded-section ded-section-dark oe_structure"
+                 data-snippet="s_ded_portfolio" data-name="DED Portfolio">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="text-white">I nostri <span class="text-gradient">progetti</span></h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ded-card overflow-hidden">
+                            <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#1B3C73,#2563EB);display:flex;align-items:center;justify-content:center;font-size:3rem;">🏛️</div>
+                            <div class="p-4">
+                                <span style="background:rgba(37,99,235,.15);color:#93C5FD;border:1px solid rgba(37,99,235,.3);border-radius:50px;padding:.2rem .75rem;font-size:.7rem;font-weight:600;display:inline-block;margin-bottom:.75rem;">AI · PA</span>
+                                <h5 class="text-white mb-2">AI Agent per Comune</h5>
+                                <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Automazione pratiche amministrative</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ded-card overflow-hidden">
+                            <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#224,#E07B1A22);display:flex;align-items:center;justify-content:center;font-size:3rem;">🏥</div>
+                            <div class="p-4">
+                                <span style="background:rgba(224,123,26,.15);color:#FCD34D;border:1px solid rgba(224,123,26,.3);border-radius:50px;padding:.2rem .75rem;font-size:.7rem;font-weight:600;display:inline-block;margin-bottom:.75rem;">Odoo · Healthcare</span>
+                                <h5 class="text-white mb-2">ERP Sanitario</h5>
+                                <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Gestione pazienti e fatturazione</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ded-card overflow-hidden">
+                            <div style="aspect-ratio:16/9;background:linear-gradient(135deg,#0F2354,#1D4ED8);display:flex;align-items:center;justify-content:center;font-size:3rem;">📊</div>
+                            <div class="p-4">
+                                <span style="background:rgba(37,99,235,.15);color:#93C5FD;border:1px solid rgba(37,99,235,.3);border-radius:50px;padding:.2rem .75rem;font-size:.7rem;font-weight:600;display:inline-block;margin-bottom:.75rem;">Web · Data</span>
+                                <h5 class="text-white mb-2">Business Intelligence</h5>
+                                <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Dashboard KPI real-time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="/portfolio" class="btn btn-outline-primary btn-lg">Vedi tutti i progetti</a>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>

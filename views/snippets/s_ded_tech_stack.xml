@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_tech_stack" model="ir.ui.view">
+    <field name="name">DED Tech Stack Marquee</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_tech_stack</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_tech_stack oe_structure"
+                 style="padding:3rem 0;background:var(--ded-bg-mid);border-top:1px solid rgba(255,255,255,.06);"
+                 data-snippet="s_ded_tech_stack" data-name="DED Tech Stack">
+            <div class="container mb-4">
+                <p class="text-center font-mono" style="color:rgba(255,255,255,.3);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;">
+                    // Technology Stack
+                </p>
+            </div>
+            <div class="ded-marquee-wrap">
+                <div class="ded-marquee">
+                    <span class="tech-badge">🐍 Python</span>
+                    <span class="tech-badge">⚛️ React</span>
+                    <span class="tech-badge">🟢 Node.js</span>
+                    <span class="tech-badge">🐘 PostgreSQL</span>
+                    <span class="tech-badge">⚙️ Odoo 17/18/19</span>
+                    <span class="tech-badge">🤖 LangChain</span>
+                    <span class="tech-badge">🧠 OpenAI / Claude</span>
+                    <span class="tech-badge">☁️ AWS / Azure</span>
+                    <span class="tech-badge">🐳 Docker</span>
+                    <span class="tech-badge">🔄 n8n</span>
+                    <span class="tech-badge">📱 React Native</span>
+                    <span class="tech-badge">🔷 TypeScript</span>
+                    <!-- Duplicate -->
+                    <span class="tech-badge">🐍 Python</span>
+                    <span class="tech-badge">⚛️ React</span>
+                    <span class="tech-badge">🟢 Node.js</span>
+                    <span class="tech-badge">🐘 PostgreSQL</span>
+                    <span class="tech-badge">⚙️ Odoo 17/18/19</span>
+                    <span class="tech-badge">🤖 LangChain</span>
+                    <span class="tech-badge">🧠 OpenAI / Claude</span>
+                    <span class="tech-badge">☁️ AWS / Azure</span>
+                    <span class="tech-badge">🐳 Docker</span>
+                    <span class="tech-badge">🔄 n8n</span>
+                    <span class="tech-badge">📱 React Native</span>
+                    <span class="tech-badge">🔷 TypeScript</span>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>

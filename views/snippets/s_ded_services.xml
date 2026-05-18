@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_services" model="ir.ui.view">
+    <field name="name">DED Services Grid</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_services</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_services ded-section ded-section-dark oe_structure"
+                 data-snippet="s_ded_services" data-name="DED Servizi">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-label">I Nostri Servizi</span>
+                    <h2 class="text-white">Soluzioni tech per ogni <span class="text-gradient">esigenza</span></h2>
+                </div>
+                <div class="ded-feature-bento">
+                    <div class="bento-item bento-wide bento-blue">
+                        <span class="section-label" style="margin-bottom:.75rem;">01</span>
+                        <h3 class="text-white mb-2">AI Agents &amp; Automazione</h3>
+                        <p style="color:rgba(255,255,255,.6);margin:0;">Agenti AI custom per automazione workflow aziendali.</p>
+                    </div>
+                    <div class="bento-item bento-orange">
+                        <span class="section-label" style="margin-bottom:.75rem;">02</span>
+                        <h4 class="text-white mb-2">Odoo Partner</h4>
+                        <p style="color:rgba(255,255,255,.6);margin:0;font-size:.9rem;">Implementazione ERP e customizzazione Odoo.</p>
+                    </div>
+                    <div class="bento-item">
+                        <span class="section-label" style="margin-bottom:.75rem;">03</span>
+                        <h4 class="text-white mb-2">Software Custom</h4>
+                        <p style="color:rgba(255,255,255,.6);margin:0;font-size:.9rem;">Python · React · Node.js</p>
+                    </div>
+                    <div class="bento-item">
+                        <span class="section-label" style="margin-bottom:.75rem;">04</span>
+                        <h4 class="text-white mb-2">Web &amp; Mobile App</h4>
+                        <p style="color:rgba(255,255,255,.6);margin:0;font-size:.9rem;">Progressive Web App e native cross-platform.</p>
+                    </div>
+                    <div class="bento-item bento-tall">
+                        <span class="section-label" style="margin-bottom:.75rem;">05</span>
+                        <h4 class="text-white mb-2">Healthcare IT</h4>
+                        <p style="color:rgba(255,255,255,.6);margin:0;font-size:.9rem;">Soluzioni digitali per il settore sanitario.</p>
+                    </div>
+                    <div class="bento-item">
+                        <span class="section-label" style="margin-bottom:.75rem;">06</span>
+                        <h4 class="text-white mb-2">Pubblica Amministrazione</h4>
+                        <p style="color:rgba(255,255,255,.6);margin:0;font-size:.9rem;">Digitalizzazione PA, conformità CAD e GDPR.</p>
+                    </div>
+                    <div class="bento-item">
+                        <span class="section-label" style="margin-bottom:.75rem;">07</span>
+                        <h4 class="text-white mb-2">Data &amp; Dashboard</h4>
+                        <p style="color:rgba(255,255,255,.6);margin:0;font-size:.9rem;">BI e dashboard interattive data-driven.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>

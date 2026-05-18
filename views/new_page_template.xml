@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- New page template for website builder -->
+    <record id="ded_new_page_template" model="ir.ui.view">
+        <field name="name">D&amp;D Partners - New Page Template</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_ded_partners.new_page_template</field>
+        <field name="arch" type="xml">
+            <div class="oe_structure">
+                <!-- Hero banner -->
+                <section class="ded-hero" style="min-height:50vh;">
+                    <div class="container" style="position:relative;z-index:1;padding-top:9rem;padding-bottom:5rem;">
+                        <div class="text-center">
+                            <span class="section-label">// page</span>
+                            <h1 class="display-1 text-white mb-3">
+                                Titolo <span class="text-gradient">Pagina</span>
+                            </h1>
+                            <p style="color:rgba(255,255,255,.6);font-size:1.2rem;max-width:600px;margin:0 auto;">
+                                Sottotitolo descrittivo della pagina
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Content area -->
+                <section class="ded-section ded-section-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="text-white">Contenuto</h2>
+                                <p style="color:rgba(255,255,255,.65);">
+                                    Inizia a modificare questa pagina dall'editor di Odoo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </field>
+    </record>
+
+</odoo>
