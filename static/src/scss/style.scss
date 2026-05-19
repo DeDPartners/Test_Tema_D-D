@@ -1,0 +1,22 @@
+.dd-hero {
+    min-height: 100vh;
+    background: #050816;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dd-hero h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dd-hero p {
+    margin-top: 24px;
+    font-size: 20px;
+    opacity: 0.8;
+}
