@@ -1,15 +1,13 @@
 {
     'name': 'D&D Partners Theme',
-    'description': 'Modern Tech Theme for D&D Partners S.r.l. - IT Consulting & AI Solutions',
+    'description': 'Modern Tech Theme for D&D Partners S.r.l.',
     'category': 'Theme/Corporate',
-    'summary': 'IT Consulting, AI Agents, Software Development, Odoo Partner, Healthcare, Public Administration',
+    'summary': 'IT Consulting, AI Agents, Software Development, Odoo Partner',
     'sequence': 100,
     'version': '19.0.1.0.0',
     'depends': ['theme_common'],
     'data': [
         'data/generate_primary_template.xml',
-        'data/ir_asset.xml',
-        'views/images.xml',
         'views/layout.xml',
         'views/pages/home.xml',
         'views/pages/about.xml',
@@ -27,21 +25,10 @@
         'views/snippets/s_ded_testimonials.xml',
         'views/snippets/s_ded_tech_stack.xml',
         'views/new_page_template.xml',
+        'views/images.xml',
     ],
     'configurator_snippets': {
-        'homepage': [
-            's_ded_hero',
-            's_ded_services',
-            's_ded_stats',
-            's_ded_about',
-            's_ded_partners',
-            's_ded_cta',
-        ],
-    },
-    'new_page_templates': {
-        'about': {
-            'personal': ['s_ded_about', 's_ded_stats', 's_ded_team', 's_ded_cta'],
-        },
+        'homepage': ['s_ded_hero', 's_ded_services', 's_ded_stats', 's_ded_cta'],
     },
     'author': 'D&D Partners S.r.l.',
     'website': 'https://www.dedpartners.com',

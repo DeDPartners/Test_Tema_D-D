@@ -2,165 +2,153 @@
 <odoo>
 
 <record id="ded_about_view" model="ir.ui.view">
-    <field name="name">D&amp;D Partners - Chi Siamo</field>
+    <field name="name">D&amp;D Partners Chi Siamo</field>
+    <field name="key">theme_ded_partners.ded_about_view</field>
     <field name="type">qweb</field>
-    <field name="key">theme_ded_partners.about</field>
     <field name="arch" type="xml">
+<t t-name="theme_ded_partners.ded_about_view">
 <t t-call="website.layout">
-<div id="wrap" class="oe_structure oe_empty">
+  <t t-set="pageName" t-value="'about'"/>
+  <div id="wrap" class="ded-page-about">
 
-    <!-- Hero -->
-    <section class="ded-hero" style="min-height:55vh;">
-        <canvas id="ded-particle-canvas" class="particle-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"/>
-        <div class="container" style="position:relative;z-index:1;padding-top:9rem;padding-bottom:5rem;">
-            <div class="text-center">
-                <span class="section-label">// about us</span>
-                <h1 class="display-1 text-white mb-3">Chi <span class="text-gradient">Siamo</span></h1>
-                <p style="color:rgba(255,255,255,.6);font-size:1.2rem;max-width:600px;margin:0 auto;">
-                    IT Partner per aziende e pubbliche amministrazioni. Padova, dal 2023.
-                </p>
-            </div>
-        </div>
+    <!-- PAGE HERO -->
+    <section class="ded-page-hero">
+      <div class="ded-hero-bg"></div>
+      <div class="ded-wrap">
+        <span class="ded-eyebrow ded-reveal">Chi siamo</span>
+        <h1 class="ded-reveal">Engineering <em>tomorrow's</em><br/>software.</h1>
+        <p class="ded-page-hero-sub ded-reveal">D&amp;D Partners S.r.l. è una società di consulenza IT con sede a Padova, specializzata in sviluppo software custom, AI agents e Odoo. Fondata nel 2023 da un team di ingegneri con esperienza nel settore pubblico, healthcare e privato.</p>
+      </div>
     </section>
 
-    <!-- Mission -->
-    <section class="ded-section ded-section-dark">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-ded-reveal="left">
-                    <span class="section-label">La nostra missione</span>
-                    <h2 class="text-white mb-4">Innovazione <span class="text-gradient">su misura</span> per te</h2>
-                    <p style="color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:1.5rem;">
-                        Siamo <strong style="color:#fff;">appassionati di tecnologia e innovazione</strong>.
-                        Dal 2023 sviluppiamo soluzioni custom per soddisfare le esigenze uniche
-                        dei nostri clienti pubblici e privati.
-                    </p>
-                    <p style="color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:2rem;">
-                        Collaboriamo strettamente con pubbliche amministrazioni e aziende private
-                        per consegnare soluzioni scalabili, sicure e innovative che guidano
-                        l'efficienza e la trasformazione digitale.
-                    </p>
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="ded-card p-3 text-center">
-                                <div class="stat-number" style="font-size:2.5rem;" data-count="50" data-count-suffix="+">0+</div>
-                                <div class="stat-label">Progetti</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="ded-card p-3 text-center">
-                                <div class="stat-number" style="font-size:2.5rem;" data-count="98" data-count-suffix="%">0%</div>
-                                <div class="stat-label">Soddisfazione</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-ded-reveal="right">
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <div class="ded-card p-4 d-flex gap-4 align-items-start">
-                                <div style="font-size:2rem;">🎯</div>
-                                <div>
-                                    <h5 class="text-white mb-2">Metodo &amp; Processo</h5>
-                                    <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.7;">
-                                        Ogni progetto inizia con un'analisi approfondita delle esigenze.
-                                        Definiamo obiettivi chiari, metodologie agili e KPI misurabili.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="ded-card p-4 d-flex gap-4 align-items-start">
-                                <div style="font-size:2rem;">🚀</div>
-                                <div>
-                                    <h5 class="text-white mb-2">Tecnologia all'avanguardia</h5>
-                                    <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.7;">
-                                        Utilizziamo le tecnologie più moderne: AI generativa, cloud nativo,
-                                        microservizi e framework open source di ultima generazione.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="ded-card p-4 d-flex gap-4 align-items-start">
-                                <div style="font-size:2rem;">🤝</div>
-                                <div>
-                                    <h5 class="text-white mb-2">Partnership a lungo termine</h5>
-                                    <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.7;">
-                                        Non siamo solo fornitori: siamo partner tecnologici che crescono
-                                        con i nostri clienti, offrendo supporto continuo post-lancio.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- MISSION -->
+    <section style="padding:100px 0">
+      <div class="ded-wrap">
+        <div class="ded-about-grid ded-reveal">
+          <div>
+            <span class="ded-eyebrow">La nostra missione</span>
+            <h2>Tecnologia che <em>risolve problemi veri.</em></h2>
+            <p style="color:var(--fg-dim);margin-top:24px;font-size:17px;line-height:1.65">Non costruiamo software per il gusto della tecnologia. Lo facciamo perché crediamo che ogni organizzazione — pubblica o privata — meriti strumenti digitali che funzionano davvero, scalano nel tempo e non creano dipendenza da vendor opachi.</p>
+            <p style="color:var(--fg-dim);margin-top:16px;font-size:17px;line-height:1.65">Il nostro approccio: ascolto profondo, architettura solida, consegna veloce. Senza fumo.</p>
+          </div>
+          <div class="ded-about-stats">
+            <div class="ded-stat-card">
+              <div class="ded-stat-num">2023</div>
+              <div class="ded-stat-lbl">Anno di fondazione</div>
             </div>
+            <div class="ded-stat-card">
+              <div class="ded-stat-num">50+</div>
+              <div class="ded-stat-lbl">Progetti consegnati</div>
+            </div>
+            <div class="ded-stat-card">
+              <div class="ded-stat-num">12+</div>
+              <div class="ded-stat-lbl">Esperti in team</div>
+            </div>
+            <div class="ded-stat-card">
+              <div class="ded-stat-num">ISO</div>
+              <div class="ded-stat-lbl">9001 &amp; 27001 certified</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Values -->
-    <section class="ded-section ded-section-glass">
-        <div class="container">
-            <div class="text-center mb-5" data-ded-reveal="up">
-                <span class="section-label">I nostri valori</span>
-                <h2 class="text-white">Cosa ci <span class="text-gradient">guida</span></h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="1">
-                    <div class="ded-card p-4 text-center h-100">
-                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">💡</div>
-                        <h5 class="text-white">Innovazione</h5>
-                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Sempre all'avanguardia tecnologica</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="2">
-                    <div class="ded-card p-4 text-center h-100">
-                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">🛡️</div>
-                        <h5 class="text-white">Sicurezza</h5>
-                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Dati protetti, sistemi affidabili</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="3">
-                    <div class="ded-card p-4 text-center h-100">
-                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">📈</div>
-                        <h5 class="text-white">Crescita</h5>
-                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">ROI misurabile per i clienti</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="4">
-                    <div class="ded-card p-4 text-center h-100">
-                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">🤝</div>
-                        <h5 class="text-white">Partnership</h5>
-                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Relazioni durature e di fiducia</p>
-                    </div>
-                </div>
-            </div>
+    <!-- VALUES -->
+    <section style="padding:0 0 100px">
+      <div class="ded-wrap">
+        <div class="ded-section-head ded-reveal">
+          <span class="ded-eyebrow">I nostri valori</span>
+          <h2>Cosa ci guida <em>ogni giorno.</em></h2>
         </div>
+        <div class="ded-values-grid">
+          <div class="ded-card ded-reveal">
+            <div class="ded-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3>Qualità certificata</h3>
+            <p>ISO 9001 e ISO 27001. Non badge decorativi: processi reali, audit continuativi, qualità misurabile.</p>
+          </div>
+          <div class="ded-card ded-reveal">
+            <div class="ded-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Persone prima</h3>
+            <p>Lavoriamo con persone, non con ticket. Costruiamo relazioni durature con i clienti, non transazioni.</p>
+          </div>
+          <div class="ded-card ded-reveal">
+            <div class="ded-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Velocità con sostanza</h3>
+            <p>Sprint veloci, nessuna scorciatoia. Il codice che consegniamo è quello che manteniamo.</p>
+          </div>
+          <div class="ded-card ded-reveal">
+            <div class="ded-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>Partnership continua</h3>
+            <p>Il progetto non finisce al go-live. Siamo al tuo fianco mentre il prodotto cresce e cambia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section style="padding:60px 0 120px;border-top:1px solid var(--line)">
+      <div class="ded-wrap">
+        <div class="ded-section-head ded-reveal">
+          <span class="ded-eyebrow">Certificazioni</span>
+          <h2>Conformità e <em>sicurezza.</em></h2>
+        </div>
+        <div class="ded-process-grid">
+          <div class="ded-step ded-reveal">
+            <div class="ded-step-n" style="font-size:36px">ISO</div>
+            <h4>ISO 9001:2015</h4>
+            <p>Sistema di gestione della qualità certificato. Processi standardizzati, customer satisfaction misurabile.</p>
+          </div>
+          <div class="ded-step ded-reveal">
+            <div class="ded-step-n" style="font-size:36px">ISO</div>
+            <h4>ISO 27001:2022</h4>
+            <p>Sicurezza delle informazioni certificata. Gestione del rischio, protezione dei dati, GDPR-ready.</p>
+          </div>
+          <div class="ded-step ded-reveal">
+            <div class="ded-step-n" style="font-size:28px">ODP</div>
+            <h4>Odoo Official Partner</h4>
+            <p>Partner ufficiale Odoo. Implementazioni certificate, team formato direttamente da Odoo S.A.</p>
+          </div>
+          <div class="ded-step ded-reveal">
+            <div class="ded-step-n" style="font-size:28px">EU</div>
+            <h4>GDPR Compliant</h4>
+            <p>Conformità al Regolamento Europeo sulla protezione dei dati in tutti i prodotti e processi.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA -->
-    <section class="ded-section">
-        <div class="container">
-            <div class="ded-cta text-center" data-ded-reveal="up">
-                <h2 class="text-white mb-3">Lavoriamo insieme</h2>
-                <p class="mb-4" style="color:rgba(255,255,255,.6);">Contattaci per scoprire come possiamo aiutarti.</p>
-                <a href="/contact" class="btn btn-primary btn-lg btn-magnetic">
-                    <i class="fa fa-envelope me-2"/>Parliamo del tuo progetto
-                </a>
-            </div>
-        </div>
+    <section class="ded-cta">
+      <span class="ded-eyebrow ded-reveal">Lavoriamo insieme</span>
+      <h2 class="ded-reveal">Vuoi conoscerci<br/><em>di persona?</em></h2>
+      <p class="ded-cta-sub ded-reveal">Vieni a trovarci a Padova o chiamaci: siamo persone vere, con passione vera per il software.</p>
+      <div class="ded-cta-actions ded-reveal">
+        <a href="/contatti" class="ded-btn ded-btn-primary">
+          <span>Contattaci</span>
+          <svg class="ded-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="/servizi" class="ded-btn ded-btn-ghost"><span>Scopri i nostri servizi</span></a>
+      </div>
     </section>
 
-</div>
+  </div>
+</t>
 </t>
     </field>
 </record>
 
 <record id="ded_about_page" model="website.page">
     <field name="name">Chi Siamo</field>
-    <field name="url">/about</field>
     <field name="website_published">True</field>
+    <field name="url">/chi-siamo</field>
     <field name="view_id" ref="ded_about_view"/>
 </record>
 
