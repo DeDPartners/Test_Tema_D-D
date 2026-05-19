@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<asset id="theme_ded_partners.primary_variables_scss" name="D&amp;D Partners Primary Variables SCSS">
+    <field name="key">theme_ded_partners.primary_variables_scss</field>
+    <bundle>web._assets_primary_variables</bundle>
+    <path>theme_ded_partners/static/src/scss/primary_variables.scss</path>
+</asset>
+
+<asset id="theme_ded_partners.bootstrap_overridden_scss" name="D&amp;D Partners Bootstrap Overridden SCSS">
+    <field name="key">theme_ded_partners.bootstrap_overridden_scss</field>
+    <bundle directive="prepend">web._assets_frontend_helpers</bundle>
+    <path>theme_ded_partners/static/src/scss/bootstrap_overridden.scss</path>
+</asset>
+
+<asset id="theme_ded_partners.theme_scss" name="D&amp;D Partners Theme SCSS">
+    <field name="key">theme_ded_partners.theme_scss</field>
+    <bundle>website.assets_frontend</bundle>
+    <path>theme_ded_partners/static/src/scss/theme.scss</path>
+</asset>
+
+<asset id="theme_ded_partners.effects_js" name="D&amp;D Partners Effects JS">
+    <field name="key">theme_ded_partners.effects_js</field>
+    <bundle>website.assets_frontend</bundle>
+    <path>theme_ded_partners/static/src/js/ded_effects.js</path>
+</asset>
+
+</odoo>

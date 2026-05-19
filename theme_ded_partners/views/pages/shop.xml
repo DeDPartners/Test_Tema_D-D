@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Shop page overrides - only applied when website_sale is installed -->
+
+<template id="ded_shop_override" inherit_id="website_sale.products"
+          name="D&amp;D Shop Header" active="True">
+    <xpath expr="//div[hasclass('container')]" position="before">
+        <!-- Shop Hero Banner -->
+        <section class="ded-hero" style="min-height:40vh;">
+            <canvas id="ded-particle-canvas-shop" class="particle-canvas"
+                    style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"/>
+            <div class="container" style="position:relative;z-index:1;padding-top:8rem;padding-bottom:4rem;">
+                <div class="text-center">
+                    <span class="section-label">// shop</span>
+                    <h1 class="display-1 text-white mb-3">
+                        Soluzioni <span class="text-gradient">pronte</span> all'uso
+                    </h1>
+                    <p style="color:rgba(255,255,255,.6);font-size:1.1rem;max-width:560px;margin:0 auto;">
+                        Pacchetti software, licenze, moduli Odoo e servizi AI
+                        acquistabili direttamente online.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </xpath>
+</template>
+
+</odoo>

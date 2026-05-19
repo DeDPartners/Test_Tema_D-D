@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="ded_contact_page" model="website.page">
+    <field name="name">Contatti</field>
+    <field name="url">/contact</field>
+    <field name="website_published">True</field>
+    <field name="view_id" ref="ded_contact_view"/>
+</record>
+
+<record id="ded_contact_view" model="ir.ui.view">
+    <field name="name">D&amp;D Partners - Contatti</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.contact</field>
+    <field name="arch" type="xml">
+<t t-call="website.layout">
+<div id="wrap" class="oe_structure oe_empty">
+
+    <!-- Hero -->
+    <section class="ded-hero" style="min-height:45vh;">
+        <canvas id="ded-particle-canvas" class="particle-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"/>
+        <div class="container" style="position:relative;z-index:1;padding-top:9rem;padding-bottom:4rem;">
+            <div class="text-center">
+                <span class="section-label">// contact</span>
+                <h1 class="display-1 text-white mb-3">Parliamo del<br/><span class="text-gradient">tuo progetto</span></h1>
+                <p style="color:rgba(255,255,255,.6);font-size:1.2rem;max-width:500px;margin:0 auto;">
+                    Siamo sempre pronti ad ascoltarti. Contattaci per una consulenza gratuita.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="ded-section ded-section-dark">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5" data-ded-reveal="left">
+                    <h3 class="text-white mb-4">Siamo qui per te</h3>
+
+                    <div class="d-flex flex-column gap-4">
+                        <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--ded-blue),var(--ded-orange));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <i class="fa fa-map-marker text-white"/>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Sede Legale</h6>
+                                <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.6;">
+                                    St. Guido Rossa 8, 35020<br/>Padova (PD), Italia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--ded-blue),var(--ded-orange));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <i class="fa fa-phone text-white"/>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Telefono</h6>
+                                <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.8;">
+                                    <a href="tel:+390490962657" style="color:rgba(255,255,255,.55);text-decoration:none;">049 0962657</a><br/>
+                                    <a href="tel:+393802104571" style="color:rgba(255,255,255,.55);text-decoration:none;">+39 380 2104571</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--ded-blue),var(--ded-orange));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <i class="fa fa-envelope text-white"/>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Email</h6>
+                                <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.8;">
+                                    <a href="mailto:info@dedpartners.com" style="color:rgba(255,255,255,.55);text-decoration:none;">info@dedpartners.com</a><br/>
+                                    <a href="mailto:dedpartners@pec.it" style="color:rgba(255,255,255,.55);text-decoration:none;">dedpartners@pec.it</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                            <div style="width:48px;height:48px;background:linear-gradient(135deg,var(--ded-blue),var(--ded-orange));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                <i class="fa fa-share-alt text-white"/>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-2">Social</h6>
+                                <div class="d-flex gap-2">
+                                    <a href="https://www.linkedin.com/company/dedpartners/" class="social-link" target="_blank"><i class="fa fa-linkedin"/></a>
+                                    <a href="https://github.com/DeDPartners" class="social-link" target="_blank"><i class="fa fa-github"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-ded-reveal="right">
+                    <div class="ded-card p-5">
+                        <h4 class="text-white mb-4">Inviaci un messaggio</h4>
+                        <t t-call="website_form.contact_us">
+                            <t t-set="form_action" t-value="'/website_form/create_lead'"/>
+                        </t>
+
+                        <!-- Fallback form styled -->
+                        <form action="/website_form/create_lead" method="post" class="o_mark_required"
+                              data-success-mode="redirect" data-success-page="/contact-thanks"
+                              enctype="multipart/form-data">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <input type="hidden" name="description" value="Richiesta dal sito web"/>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-white" style="font-size:.875rem;font-weight:600;">Nome *</label>
+                                    <input type="text" name="contact_name" required="True"
+                                           class="ded-input form-control" placeholder="Mario Rossi"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white" style="font-size:.875rem;font-weight:600;">Azienda</label>
+                                    <input type="text" name="partner_name"
+                                           class="ded-input form-control" placeholder="La tua azienda"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white" style="font-size:.875rem;font-weight:600;">Email *</label>
+                                    <input type="email" name="email_from" required="True"
+                                           class="ded-input form-control" placeholder="email@azienda.com"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white" style="font-size:.875rem;font-weight:600;">Telefono</label>
+                                    <input type="tel" name="phone"
+                                           class="ded-input form-control" placeholder="+39 000 0000000"/>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white" style="font-size:.875rem;font-weight:600;">Servizio di interesse</label>
+                                    <select name="tag_ids" class="ded-input form-control">
+                                        <option value="">Seleziona un servizio...</option>
+                                        <option>AI Agent Solutions</option>
+                                        <option>Odoo Implementation</option>
+                                        <option>Software Custom</option>
+                                        <option>Web &amp; Mobile App</option>
+                                        <option>Healthcare IT</option>
+                                        <option>Pubblica Amministrazione</option>
+                                        <option>Altro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white" style="font-size:.875rem;font-weight:600;">Messaggio *</label>
+                                    <textarea name="description" rows="5" required="True"
+                                              class="ded-input form-control"
+                                              placeholder="Descrivi brevemente il tuo progetto o la tua esigenza..."/>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 btn-magnetic">
+                                        <i class="fa fa-paper-plane me-2"/>Invia messaggio
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</t>
+    </field>
+</record>
+
+</odoo>

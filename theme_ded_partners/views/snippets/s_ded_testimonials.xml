@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_testimonials" model="ir.ui.view">
+    <field name="name">DED Testimonials</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_testimonials</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_testimonials ded-section ded-section-glass oe_structure"
+                 data-snippet="s_ded_testimonials" data-name="DED Testimonianze">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-label">Testimonianze</span>
+                    <h2 class="text-white">Cosa dicono i <span class="text-gradient">nostri clienti</span></h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                D&amp;D Partners ha trasformato completamente i nostri processi amministrativi
+                                grazie all'AI. Un team professionale e sempre disponibile.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">RS</div>
+                                <div>
+                                    <div class="author-name">Roberto S.</div>
+                                    <div class="author-role">Responsabile IT, Comune</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                L'implementazione Odoo è stata impeccabile. Il team ha capito
+                                subito le nostre esigenze e ha consegnato in anticipo.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">ML</div>
+                                <div>
+                                    <div class="author-name">Maria L.</div>
+                                    <div class="author-role">CFO, Azienda Privata</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">
+                                La dashboard BI che hanno sviluppato ci permette di prendere decisioni
+                                data-driven in tempo reale. Eccezionale lavoro.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">GP</div>
+                                <div>
+                                    <div class="author-name">Giovanni P.</div>
+                                    <div class="author-role">Direttore, Healthcare</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>

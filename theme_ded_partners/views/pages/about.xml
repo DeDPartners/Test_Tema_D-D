@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="ded_about_page" model="website.page">
+    <field name="name">Chi Siamo</field>
+    <field name="url">/about</field>
+    <field name="website_published">True</field>
+    <field name="view_id" ref="ded_about_view"/>
+</record>
+
+<record id="ded_about_view" model="ir.ui.view">
+    <field name="name">D&amp;D Partners - Chi Siamo</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.about</field>
+    <field name="arch" type="xml">
+<t t-call="website.layout">
+<div id="wrap" class="oe_structure oe_empty">
+
+    <!-- Hero -->
+    <section class="ded-hero" style="min-height:55vh;">
+        <canvas id="ded-particle-canvas" class="particle-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"/>
+        <div class="container" style="position:relative;z-index:1;padding-top:9rem;padding-bottom:5rem;">
+            <div class="text-center">
+                <span class="section-label">// about us</span>
+                <h1 class="display-1 text-white mb-3">Chi <span class="text-gradient">Siamo</span></h1>
+                <p style="color:rgba(255,255,255,.6);font-size:1.2rem;max-width:600px;margin:0 auto;">
+                    IT Partner per aziende e pubbliche amministrazioni. Padova, dal 2023.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="ded-section ded-section-dark">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-ded-reveal="left">
+                    <span class="section-label">La nostra missione</span>
+                    <h2 class="text-white mb-4">Innovazione <span class="text-gradient">su misura</span> per te</h2>
+                    <p style="color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:1.5rem;">
+                        Siamo <strong style="color:#fff;">appassionati di tecnologia e innovazione</strong>.
+                        Dal 2023 sviluppiamo soluzioni custom per soddisfare le esigenze uniche
+                        dei nostri clienti pubblici e privati.
+                    </p>
+                    <p style="color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:2rem;">
+                        Collaboriamo strettamente con pubbliche amministrazioni e aziende private
+                        per consegnare soluzioni scalabili, sicure e innovative che guidano
+                        l'efficienza e la trasformazione digitale.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="ded-card p-3 text-center">
+                                <div class="stat-number" style="font-size:2.5rem;" data-count="50" data-count-suffix="+">0+</div>
+                                <div class="stat-label">Progetti</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ded-card p-3 text-center">
+                                <div class="stat-number" style="font-size:2.5rem;" data-count="98" data-count-suffix="%">0%</div>
+                                <div class="stat-label">Soddisfazione</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-ded-reveal="right">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                                <div style="font-size:2rem;">🎯</div>
+                                <div>
+                                    <h5 class="text-white mb-2">Metodo &amp; Processo</h5>
+                                    <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.7;">
+                                        Ogni progetto inizia con un'analisi approfondita delle esigenze.
+                                        Definiamo obiettivi chiari, metodologie agili e KPI misurabili.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                                <div style="font-size:2rem;">🚀</div>
+                                <div>
+                                    <h5 class="text-white mb-2">Tecnologia all'avanguardia</h5>
+                                    <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.7;">
+                                        Utilizziamo le tecnologie più moderne: AI generativa, cloud nativo,
+                                        microservizi e framework open source di ultima generazione.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="ded-card p-4 d-flex gap-4 align-items-start">
+                                <div style="font-size:2rem;">🤝</div>
+                                <div>
+                                    <h5 class="text-white mb-2">Partnership a lungo termine</h5>
+                                    <p style="color:rgba(255,255,255,.55);margin:0;line-height:1.7;">
+                                        Non siamo solo fornitori: siamo partner tecnologici che crescono
+                                        con i nostri clienti, offrendo supporto continuo post-lancio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="ded-section ded-section-glass">
+        <div class="container">
+            <div class="text-center mb-5" data-ded-reveal="up">
+                <span class="section-label">I nostri valori</span>
+                <h2 class="text-white">Cosa ci <span class="text-gradient">guida</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="1">
+                    <div class="ded-card p-4 text-center h-100">
+                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">💡</div>
+                        <h5 class="text-white">Innovazione</h5>
+                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Sempre all'avanguardia tecnologica</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="2">
+                    <div class="ded-card p-4 text-center h-100">
+                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">🛡️</div>
+                        <h5 class="text-white">Sicurezza</h5>
+                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Dati protetti, sistemi affidabili</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="3">
+                    <div class="ded-card p-4 text-center h-100">
+                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">📈</div>
+                        <h5 class="text-white">Crescita</h5>
+                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">ROI misurabile per i clienti</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-ded-reveal="up" data-ded-delay="4">
+                    <div class="ded-card p-4 text-center h-100">
+                        <div class="ded-card-icon mx-auto" style="font-size:1.5rem;">🤝</div>
+                        <h5 class="text-white">Partnership</h5>
+                        <p style="color:rgba(255,255,255,.5);font-size:.9rem;">Relazioni durature e di fiducia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ded-section">
+        <div class="container">
+            <div class="ded-cta text-center" data-ded-reveal="up">
+                <h2 class="text-white mb-3">Lavoriamo insieme</h2>
+                <p class="mb-4" style="color:rgba(255,255,255,.6);">Contattaci per scoprire come possiamo aiutarti.</p>
+                <a href="/contact" class="btn btn-primary btn-lg btn-magnetic">
+                    <i class="fa fa-envelope me-2"/>Parliamo del tuo progetto
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
+</t>
+    </field>
+</record>
+
+</odoo>

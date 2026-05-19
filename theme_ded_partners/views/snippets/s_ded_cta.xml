@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="s_ded_cta" model="ir.ui.view">
+    <field name="name">DED CTA Section</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_ded_partners.s_ded_cta</field>
+    <field name="arch" type="xml">
+        <section class="s_ded_cta ded-section oe_structure"
+                 data-snippet="s_ded_cta" data-name="DED Call to Action">
+            <div class="container">
+                <div class="ded-cta text-center">
+                    <span class="section-label">Pronto a innovare?</span>
+                    <h2 class="text-white mb-3">Trasformiamo la tua idea in<br/><span class="text-gradient">realtà digitale</span></h2>
+                    <p class="mb-5 mx-auto" style="max-width:520px;color:rgba(255,255,255,.6);font-size:1.1rem;line-height:1.7;">
+                        Contattaci per una consulenza gratuita. Analizzeremo le tue esigenze
+                        e proporremo la soluzione più adatta.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="/contact" class="btn btn-primary btn-lg">
+                            <i class="fa fa-envelope me-2"/>Contattaci ora
+                        </a>
+                        <a href="tel:+393802104571" class="btn btn-glass btn-lg">
+                            <i class="fa fa-phone me-2"/>+39 380 2104571
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </field>
+</record>
+
+</odoo>
