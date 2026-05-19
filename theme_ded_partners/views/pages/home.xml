@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+<!-- Inherit website.homepage and replace the wrap content -->
 <record id="ded_home_view" model="ir.ui.view">
     <field name="name">D&amp;D Partners Home</field>
     <field name="key">theme_ded_partners.ded_home_view</field>
-    <field name="type">qweb</field>
+    <field name="inherit_id" ref="website.homepage"/>
     <field name="arch" type="xml">
-<t t-name="theme_ded_partners.ded_home_view">
-<t t-call="website.layout">
-  <t t-set="pageName" t-value="'home'"/>
-  <div id="wrap" class="ded-page-home">
+        <xpath expr="//div[@id='wrap']" position="replace">
+        <div id="wrap" class="ded-page-home">
 
     <!-- HERO -->
     <section class="ded-hero">
@@ -45,7 +44,7 @@
     </section>
 
     <!-- SERVICES BENTO -->
-    <section id="servizi" style="padding:80px 0 120px">
+    <section style="padding:80px 0 120px">
       <div class="ded-wrap">
         <div class="ded-section-head ded-reveal">
           <span class="ded-eyebrow">Cosa facciamo</span>
@@ -109,8 +108,8 @@
       </div>
     </section>
 
-    <!-- AI WOW SECTION -->
-    <section class="ded-ai-section" id="ai">
+    <!-- AI SECTION -->
+    <section class="ded-ai-section">
       <div class="ded-ai-wrap ded-wrap">
         <span class="ded-eyebrow ded-reveal">Intelligenza artificiale</span>
         <h2 class="ded-reveal">Agenti AI che lavorano<br/><span class="ded-grad">davvero per te.</span></h2>
@@ -136,7 +135,7 @@
     </section>
 
     <!-- SECTORS -->
-    <section id="settori" style="padding:0">
+    <section style="padding:0">
       <div class="ded-wrap" style="padding:140px 28px 80px">
         <div class="ded-section-head ded-reveal">
           <span class="ded-eyebrow">Dove operiamo</span>
@@ -166,14 +165,14 @@
     </section>
 
     <!-- ODOO PARTNER -->
-    <section id="odoo" style="padding:60px 0">
+    <section style="padding:60px 0">
       <div class="ded-wrap">
         <div class="ded-odoo ded-reveal">
           <div class="ded-odoo-inner">
             <div>
               <span class="ded-badge">★ Official Odoo Partner</span>
               <h3>Tutto il tuo business, <em>in un'unica piattaforma.</em></h3>
-              <p>Come partner ufficiali Odoo, integriamo, personalizziamo e supportiamo l'intero ecosistema Odoo — dalla contabilità alle vendite, dal magazzino al CRM. Anche il tuo sito può essere agganciato a Odoo per gestione lead, marketing e analytics in tempo reale.</p>
+              <p>Come partner ufficiali Odoo, integriamo, personalizziamo e supportiamo l'intero ecosistema Odoo — dalla contabilità alle vendite, dal magazzino al CRM.</p>
               <ul class="ded-features">
                 <li>Implementazione e configurazione completa</li>
                 <li>Moduli custom su misura del tuo business</li>
@@ -204,7 +203,7 @@
     </div>
 
     <!-- PROCESS -->
-    <section id="metodo" style="padding:120px 0">
+    <section style="padding:120px 0">
       <div class="ded-wrap">
         <div class="ded-section-head ded-reveal">
           <span class="ded-eyebrow">Come lavoriamo</span>
@@ -269,17 +268,9 @@
       </div>
     </section>
 
-  </div>
-</t>
-</t>
+        </div>
+        </xpath>
     </field>
-</record>
-
-<record id="ded_home_page" model="website.page">
-    <field name="name">Home</field>
-    <field name="website_published">True</field>
-    <field name="url">/</field>
-    <field name="view_id" ref="ded_home_view"/>
 </record>
 
 </odoo>
