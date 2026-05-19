@@ -1,16 +1,19 @@
-# Italian translation for D&D Partners Theme
+# Translation of theme_ded_partners.pot to Italian
 # Copyright (C) 2024 D&D Partners S.r.l.
+# This file is distributed under the same license as the theme_ded_partners package.
 msgid ""
 msgstr ""
-"Project-Id-Version: theme_ded_partners\n"
-"Report-Msgid-Bugs-To: info@dedpartners.com\n"
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: D&D Partners S.r.l. <info@dedpartners.com>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
-
-msgid "Home"
-msgstr "Home"
+"X-Odoo-Module: theme_ded_partners\n"
 
 msgid "About Us"
 msgstr "Chi Siamo"
@@ -21,19 +24,10 @@ msgstr "Servizi"
 msgid "Portfolio"
 msgstr "Portfolio"
 
-msgid "Shop"
-msgstr "Shop"
-
 msgid "Contact"
 msgstr "Contatti"
 
-msgid "Get in touch"
-msgstr "Contattaci"
-
-msgid "Our Services"
-msgstr "I Nostri Servizi"
-
-msgid "Read More"
+msgid "Learn More"
 msgstr "Scopri di più"
 
 msgid "View All"
@@ -42,11 +36,20 @@ msgstr "Vedi tutti"
 msgid "Send Message"
 msgstr "Invia Messaggio"
 
-msgid "AI Agents & Automazione"
-msgstr "AI Agents & Automazione"
+msgid "Get Started"
+msgstr "Inizia ora"
 
-msgid "Odoo Partner"
-msgstr "Partner Odoo"
+msgid "Our Services"
+msgstr "I nostri servizi"
 
-msgid "Software Custom"
-msgstr "Software Personalizzato"
+msgid "Innovation tailored for you"
+msgstr "Innovazione su misura per te"
+
+msgid "Let's work together"
+msgstr "Lavoriamo insieme"
+
+msgid "Project"
+msgstr "Progetto"
+
+msgid "All"
+msgstr "Tutti"

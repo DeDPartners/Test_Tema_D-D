@@ -1,13 +1,19 @@
-# English translation for D&D Partners Theme
+# Translation of theme_ded_partners.pot to English
 # Copyright (C) 2024 D&D Partners S.r.l.
+# This file is distributed under the same license as the theme_ded_partners package.
 msgid ""
 msgstr ""
-"Project-Id-Version: theme_ded_partners\n"
-"Report-Msgid-Bugs-To: info@dedpartners.com\n"
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: D&D Partners S.r.l. <info@dedpartners.com>\n"
+"Language-Team: English\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"X-Odoo-Module: theme_ded_partners\n"
 
 msgid "Chi Siamo"
 msgstr "About Us"
@@ -30,8 +36,20 @@ msgstr "View All"
 msgid "Invia Messaggio"
 msgstr "Send Message"
 
-msgid "Contattaci"
-msgstr "Get in touch"
+msgid "Inizia ora"
+msgstr "Get Started"
 
-msgid "I Nostri Servizi"
+msgid "I nostri servizi"
 msgstr "Our Services"
+
+msgid "Innovazione su misura per te"
+msgstr "Innovation tailored for you"
+
+msgid "Lavoriamo insieme"
+msgstr "Let's work together"
+
+msgid "Progetto"
+msgstr "Project"
+
+msgid "Tutti"
+msgstr "All"
