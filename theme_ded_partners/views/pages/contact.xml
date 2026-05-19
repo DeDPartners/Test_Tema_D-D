@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<record id="ded_contact_page" model="website.page">
-    <field name="name">Contatti</field>
-    <field name="url">/contact</field>
-    <field name="website_published">True</field>
-    <field name="view_id" ref="ded_contact_view"/>
-</record>
-
 <record id="ded_contact_view" model="ir.ui.view">
     <field name="name">D&amp;D Partners - Contatti</field>
     <field name="type">qweb</field>
@@ -162,6 +155,13 @@
 </div>
 </t>
     </field>
+</record>
+
+<record id="ded_contact_page" model="website.page">
+    <field name="name">Contatti</field>
+    <field name="url">/contact</field>
+    <field name="website_published">True</field>
+    <field name="view_id" ref="ded_contact_view"/>
 </record>
 
 </odoo>

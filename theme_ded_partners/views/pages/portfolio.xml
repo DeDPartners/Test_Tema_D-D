@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<record id="ded_portfolio_page" model="website.page">
-    <field name="name">Portfolio</field>
-    <field name="url">/portfolio</field>
-    <field name="website_published">True</field>
-    <field name="view_id" ref="ded_portfolio_view"/>
-</record>
-
 <record id="ded_portfolio_view" model="ir.ui.view">
     <field name="name">D&amp;D Partners - Portfolio</field>
     <field name="type">qweb</field>
@@ -163,6 +156,13 @@
 </div>
 </t>
     </field>
+</record>
+
+<record id="ded_portfolio_page" model="website.page">
+    <field name="name">Portfolio</field>
+    <field name="url">/portfolio</field>
+    <field name="website_published">True</field>
+    <field name="view_id" ref="ded_portfolio_view"/>
 </record>
 
 </odoo>

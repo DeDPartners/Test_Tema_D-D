@@ -6,14 +6,6 @@
      Tech-forward, Apple-inspired, WOW effects
      ================================================================ -->
 
-<record id="ded_home_page" model="website.page">
-    <field name="name">Home</field>
-    <field name="url">/</field>
-    <field name="website_published">True</field>
-    <field name="is_homepage">True</field>
-    <field name="view_id" ref="ded_home_view"/>
-</record>
-
 <record id="ded_home_view" model="ir.ui.view">
     <field name="name">D&amp;D Partners - Home</field>
     <field name="type">qweb</field>
@@ -394,6 +386,14 @@
 </div>
 </t>
     </field>
+</record>
+
+<record id="ded_home_page" model="website.page">
+    <field name="name">Home</field>
+    <field name="url">/</field>
+    <field name="website_published">True</field>
+    <field name="is_homepage">True</field>
+    <field name="view_id" ref="ded_home_view"/>
 </record>
 
 </odoo>
