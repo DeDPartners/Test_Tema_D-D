@@ -821,6 +821,28 @@ footer.o_footer{
 }
 @media(hover:hover){body:hover .ded-cursor-glow{opacity:1}}
 @media(hover:none){.ded-cursor-glow{display:none}}
+
+/* ============================================================
+   NAVBAR LOGO
+   ============================================================ */
+.navbar-brand img,.navbar-brand .o_logo_img{display:none !important}
+.ded-nav-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;line-height:1}
+.ded-nav-logo svg{flex-shrink:0}
+.ded-nav-name{font-family:'Geist',sans-serif;font-size:15px;font-weight:600;color:var(--fg);letter-spacing:-.02em;line-height:1.1;display:block}
+.ded-nav-sub{font-size:9px;color:var(--fg-mute);letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:2px}
+
+/* Area Personale — white pill CTA */
+.navbar a.nav-link[href="/web/login"]{
+  background:var(--fg) !important;color:#000 !important;
+  font-weight:600 !important;padding:8px 18px !important;
+  border-radius:999px !important;margin-left:6px;
+  transition:transform .25s var(--easing),box-shadow .25s var(--easing) !important;
+}
+.navbar a.nav-link[href="/web/login"]:hover{
+  transform:translateY(-1px) !important;
+  box-shadow:0 8px 24px -6px rgba(255,255,255,.4) !important;
+  background:var(--fg) !important;color:#000 !important;
+}
         </style>
     </xpath>
 </template>
@@ -868,6 +890,45 @@ footer.o_footer{
     });
     card.addEventListener('mouseleave', function(){ card.style.transform = ''; });
   });
+  // D&amp;D Partners navbar logo
+  var brand = document.querySelector('a.navbar-brand');
+  if(brand){
+    brand.innerHTML =
+      '<span class="ded-nav-logo">'
+      + '<svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">'
+      + '<rect width="36" height="36" rx="7" fill="#1B3FD5"/>'
+      + '<line x1="0" y1="28" x2="8" y2="36" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<line x1="0" y1="20" x2="16" y2="36" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<line x1="0" y1="12" x2="24" y2="36" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<line x1="4" y1="0" x2="36" y2="32" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<line x1="12" y1="0" x2="36" y2="24" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<line x1="20" y1="0" x2="36" y2="16" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<line x1="28" y1="0" x2="36" y2="8" stroke="#00091A" stroke-width="1.8" opacity="0.7"/>'
+      + '<defs><radialGradient id="ddpOG" cx="38%" cy="35%" r="65%" gradientUnits="userSpaceOnUse" x1="19" y1="19" x2="33" y2="33">'
+      + '<stop offset="0%" stop-color="#FFCB70"/>'
+      + '<stop offset="100%" stop-color="#D94600"/>'
+      + '</radialGradient></defs>'
+      + '<circle cx="26" cy="26" r="8.5" fill="url(#ddpOG)"/>'
+      + '<circle cx="23.5" cy="23.5" r="3" fill="rgba(255,255,255,0.22)"/>'
+      + '</svg>'
+      + '<span>'
+      + '<span class="ded-nav-name">D&amp;D Partners</span>'
+      + '<span class="ded-nav-sub">Official Odoo Partner</span>'
+      + '</span>'
+      + '</span>';
+  }
+  // Footer copyright
+  setTimeout(function(){
+    document.querySelectorAll('footer span, footer p, footer div').forEach(function(el){
+      if(el.children.length === 0 &amp;&amp; el.textContent &amp;&amp; el.textContent.trim().includes('©')){
+        el.textContent = '© D&amp;D Partners S.r.l. - Tutti i diritti riservati';
+      }
+    });
+    var cpNodes = document.querySelectorAll('.o_footer_copyright_name, [class*="copyright"]');
+    cpNodes.forEach(function(el){
+      el.textContent = '© D&amp;D Partners S.r.l. - Tutti i diritti riservati';
+    });
+  }, 300);
 })();
         </script>
     </xpath>

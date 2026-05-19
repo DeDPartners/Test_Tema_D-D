@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="ded_certifications_view" model="ir.ui.view">
+    <field name="name">D&amp;D Partners Certificazioni</field>
+    <field name="key">theme_ded_partners.ded_certifications_view</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+<t t-name="theme_ded_partners.ded_certifications_view">
+<t t-call="website.layout">
+  <t t-set="pageName" t-value="'certifications'"/>
+  <div id="wrap" class="ded-page-certifications">
+
+    <!-- PAGE HERO -->
+    <section class="ded-page-hero">
+      <div class="ded-hero-bg"></div>
+      <div class="ded-wrap">
+        <span class="ded-eyebrow ded-reveal">Qualità certificata</span>
+        <h1 class="ded-reveal">Le nostre <em>certificazioni.</em></h1>
+        <p class="ded-page-hero-sub ded-reveal">Operiamo con i più alti standard di qualità, sicurezza e conformità. Ogni certificazione è la prova del nostro impegno verso l'eccellenza.</p>
+      </div>
+    </section>
+
+    <!-- MAIN CERTIFICATIONS -->
+    <section style="padding:80px 0 120px;border-top:1px solid var(--line)">
+      <div class="ded-wrap">
+
+        <!-- ISO 9001 -->
+        <div class="ded-cert-block ded-reveal" style="display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:center;padding:80px 0;border-bottom:1px solid var(--line)">
+          <div style="text-align:center">
+            <div style="display:inline-flex;flex-direction:column;align-items:center;gap:14px;padding:40px 48px;border:1px solid var(--line);border-radius:var(--radius-lg);background:rgba(10,132,255,.04)">
+              <div style="font-family:'Instrument Serif',serif;font-size:80px;line-height:1;color:var(--accent);letter-spacing:-.04em">ISO</div>
+              <div style="font-size:36px;font-weight:600;color:var(--fg);letter-spacing:-.02em">9001</div>
+              <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-mute)">Quality Management</div>
+            </div>
+          </div>
+          <div>
+            <span class="ded-eyebrow">Gestione della qualità</span>
+            <h2 style="margin-top:20px;font-size:clamp(28px,3.5vw,46px);font-weight:500;letter-spacing:-.03em">ISO 9001:<em style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--fg-dim)">2015</em></h2>
+            <p style="margin-top:22px;color:var(--fg-dim);font-size:17px;line-height:1.65">La certificazione ISO 9001 attesta che il nostro sistema di gestione della qualità soddisfa i requisiti internazionali più elevati. Garantisce processi controllati, miglioramento continuo e orientamento alla soddisfazione del cliente.</p>
+            <ul style="margin-top:28px;display:flex;flex-direction:column;gap:12px;list-style:none;padding:0">
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(10,132,255,.15);border:1px solid var(--accent);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent)">✓</span>
+                Processi documentati e tracciabili in ogni fase del progetto
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(10,132,255,.15);border:1px solid var(--accent);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent)">✓</span>
+                Audit interni ed esterni periodici per garantire la conformità
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(10,132,255,.15);border:1px solid var(--accent);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent)">✓</span>
+                Ciclo PDCA (Plan-Do-Check-Act) applicato a ogni progetto
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(10,132,255,.15);border:1px solid var(--accent);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent)">✓</span>
+                Monitoraggio continuo della customer satisfaction
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ISO 27001 -->
+        <div class="ded-cert-block ded-reveal" style="display:grid;grid-template-columns:1.6fr 1fr;gap:80px;align-items:center;padding:80px 0;border-bottom:1px solid var(--line)">
+          <div>
+            <span class="ded-eyebrow">Sicurezza delle informazioni</span>
+            <h2 style="margin-top:20px;font-size:clamp(28px,3.5vw,46px);font-weight:500;letter-spacing:-.03em">ISO 27001:<em style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--fg-dim)">2022</em></h2>
+            <p style="margin-top:22px;color:var(--fg-dim);font-size:17px;line-height:1.65">La certificazione ISO/IEC 27001 dimostra che gestiamo le informazioni e i dati dei nostri clienti con i più elevati standard di sicurezza. Un impegno concreto verso la protezione dei dati sensibili e la continuità operativa.</p>
+            <ul style="margin-top:28px;display:flex;flex-direction:column;gap:12px;list-style:none;padding:0">
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(191,90,242,.15);border:1px solid var(--accent-2);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-2)">✓</span>
+                Sistema di gestione della sicurezza delle informazioni (ISMS) certificato
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(191,90,242,.15);border:1px solid var(--accent-2);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-2)">✓</span>
+                Analisi e gestione dei rischi informatici secondo standard internazionali
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(191,90,242,.15);border:1px solid var(--accent-2);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-2)">✓</span>
+                Politiche di accesso ai dati, backup e disaster recovery
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(191,90,242,.15);border:1px solid var(--accent-2);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-2)">✓</span>
+                Formazione continua del team su sicurezza e best practice
+              </li>
+            </ul>
+          </div>
+          <div style="text-align:center">
+            <div style="display:inline-flex;flex-direction:column;align-items:center;gap:14px;padding:40px 48px;border:1px solid var(--line);border-radius:var(--radius-lg);background:rgba(191,90,242,.04)">
+              <div style="font-family:'Instrument Serif',serif;font-size:80px;line-height:1;color:var(--accent-2);letter-spacing:-.04em">ISO</div>
+              <div style="font-size:36px;font-weight:600;color:var(--fg);letter-spacing:-.02em">27001</div>
+              <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-mute)">Information Security</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Odoo Official Partner -->
+        <div class="ded-cert-block ded-reveal" style="display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:center;padding:80px 0;border-bottom:1px solid var(--line)">
+          <div style="text-align:center">
+            <div style="display:inline-flex;flex-direction:column;align-items:center;gap:14px;padding:40px 48px;border:1px solid var(--line);border-radius:var(--radius-lg);background:rgba(48,209,88,.04)">
+              <div style="font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:var(--accent-3);letter-spacing:-.04em">Odoo</div>
+              <div style="font-size:18px;font-weight:600;color:var(--fg);letter-spacing:-.01em">Official Partner</div>
+              <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-mute)">Gold Level</div>
+            </div>
+          </div>
+          <div>
+            <span class="ded-eyebrow">Partnership ufficiale</span>
+            <h2 style="margin-top:20px;font-size:clamp(28px,3.5vw,46px);font-weight:500;letter-spacing:-.03em">Odoo <em style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--fg-dim)">Official Partner</em></h2>
+            <p style="margin-top:22px;color:var(--fg-dim);font-size:17px;line-height:1.65">Siamo Partner Ufficiale Odoo, il che significa accesso diretto al supporto Odoo, formazione certificata e risorse esclusive. Il nostro team è formato e certificato per implementare, personalizzare e ottimizzare Odoo in qualsiasi contesto aziendale.</p>
+            <ul style="margin-top:28px;display:flex;flex-direction:column;gap:12px;list-style:none;padding:0">
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(48,209,88,.15);border:1px solid var(--accent-3);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-3)">✓</span>
+                Sviluppatori certificati Odoo per moduli core e custom
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(48,209,88,.15);border:1px solid var(--accent-3);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-3)">✓</span>
+                Accesso anticipato alle nuove versioni e funzionalità
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(48,209,88,.15);border:1px solid var(--accent-3);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-3)">✓</span>
+                Supporto diretto dal team Odoo per casi complessi
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(48,209,88,.15);border:1px solid var(--accent-3);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-3)">✓</span>
+                Presenza sul marketplace ufficiale Odoo come partner verificato
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GDPR / EU Compliance -->
+        <div class="ded-cert-block ded-reveal" style="display:grid;grid-template-columns:1.6fr 1fr;gap:80px;align-items:center;padding:80px 0">
+          <div>
+            <span class="ded-eyebrow">Conformità normativa</span>
+            <h2 style="margin-top:20px;font-size:clamp(28px,3.5vw,46px);font-weight:500;letter-spacing:-.03em">GDPR <em style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--fg-dim)">Compliant</em></h2>
+            <p style="margin-top:22px;color:var(--fg-dim);font-size:17px;line-height:1.65">La nostra operatività è completamente conforme al Regolamento Generale sulla Protezione dei Dati (EU 2016/679). Ogni soluzione che sviluppiamo integra by design i principi di privacy, sicurezza e minimizzazione dei dati.</p>
+            <ul style="margin-top:28px;display:flex;flex-direction:column;gap:12px;list-style:none;padding:0">
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(255,55,95,.15);border:1px solid var(--accent-4);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-4)">✓</span>
+                Privacy by Design e Privacy by Default in ogni sviluppo
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(255,55,95,.15);border:1px solid var(--accent-4);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-4)">✓</span>
+                DPA (Data Processing Agreement) disponibile per tutti i clienti
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(255,55,95,.15);border:1px solid var(--accent-4);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-4)">✓</span>
+                Gestione trasparente dei dati personali e diritto all'oblio
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--fg)">
+                <span style="width:20px;height:20px;border-radius:50%;background:rgba(255,55,95,.15);border:1px solid var(--accent-4);flex-shrink:0;margin-top:2px;display:grid;place-items:center;font-size:10px;color:var(--accent-4)">✓</span>
+                Server e dati ospitati esclusivamente in data center europei
+              </li>
+            </ul>
+          </div>
+          <div style="text-align:center">
+            <div style="display:inline-flex;flex-direction:column;align-items:center;gap:14px;padding:40px 48px;border:1px solid var(--line);border-radius:var(--radius-lg);background:rgba(255,55,95,.04)">
+              <div style="font-family:'Instrument Serif',serif;font-size:48px;line-height:1;color:var(--accent-4);letter-spacing:-.04em">EU</div>
+              <div style="font-size:18px;font-weight:600;color:var(--fg);letter-spacing:-.01em">GDPR</div>
+              <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-mute)">EU 2016/679</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERT SUMMARY STATS -->
+    <section style="border-top:1px solid var(--line);padding:0 0 0">
+      <div class="ded-wrap" style="padding:80px 0">
+        <div class="ded-section-head ded-reveal">
+          <span class="ded-eyebrow">In sintesi</span>
+          <h2>Standard che <em>parlano da soli.</em></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+          <div class="ded-stat-card ded-reveal">
+            <div class="ded-stat-num">ISO<br/>9001</div>
+            <div class="ded-stat-lbl">Quality Management 2015</div>
+          </div>
+          <div class="ded-stat-card ded-reveal">
+            <div class="ded-stat-num">ISO<br/>27001</div>
+            <div class="ded-stat-lbl">Information Security 2022</div>
+          </div>
+          <div class="ded-stat-card ded-reveal">
+            <div class="ded-stat-num" style="font-size:28px">Odoo<br/>Partner</div>
+            <div class="ded-stat-lbl">Official Gold Partner</div>
+          </div>
+          <div class="ded-stat-card ded-reveal">
+            <div class="ded-stat-num">GDPR</div>
+            <div class="ded-stat-lbl">EU 2016/679 Compliant</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ded-cta">
+      <span class="ded-eyebrow ded-reveal">Lavora con noi</span>
+      <h2 class="ded-reveal">Qualità certificata,<br/><em>risultati misurabili.</em></h2>
+      <p class="ded-cta-sub ded-reveal">Le nostre certificazioni non sono solo carta: sono la garanzia che ogni progetto viene gestito con rigore, trasparenza e attenzione al dettaglio.</p>
+      <div class="ded-cta-actions ded-reveal">
+        <a href="mailto:info@dedpartners.com" class="ded-btn ded-btn-primary">
+          <span>Contattaci oggi</span>
+          <svg class="ded-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="/contatti" class="ded-btn ded-btn-ghost"><span>Tutti i contatti</span></a>
+      </div>
+    </section>
+
+  </div>
+</t>
+</t>
+    </field>
+</record>
+
+<record id="ded_certifications_page" model="website.page">
+    <field name="name">Certificazioni</field>
+    <field name="website_published">True</field>
+    <field name="url">/certificazioni</field>
+    <field name="view_id" ref="ded_certifications_view"/>
+</record>
+
+</odoo>
