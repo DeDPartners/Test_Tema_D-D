@@ -36,11 +36,18 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    background-color: var(--ded-bg-dark);
+body,
+#wrapwrap {
+    background-color: var(--ded-bg-dark) !important;
     color: #E8EEFF;
     font-family: 'Inter', system-ui, sans-serif;
     overflow-x: hidden;
+}
+
+// Odoo wraps content in #wrap — force dark bg
+#wrap {
+    background-color: var(--ded-bg-dark);
+    min-height: 100vh;
 }
 
 // Selection

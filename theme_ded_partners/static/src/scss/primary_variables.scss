@@ -1,7 +1,5 @@
 // ============================================================
-// D&D Partners Theme - Primary Variables
-// Brand Colors: Deep Blue #1A3A6B / Electric Blue #2B6CB0
-// Accent: Orange #E07B1A / Gold #F59E0B
+// D&D Partners Theme - Primary Variables (Odoo 19 compatible)
 // ============================================================
 
 //------------------------------------------------------------------------------
@@ -20,19 +18,19 @@ $o-theme-headings-font-weight: 700;
 $o-theme-font-configs: (
     'Inter': (
         'family': ('Inter', sans-serif),
-        'url': 'Inter:300,400,500,600,700,800,900',
+        'url': 'Inter:300,300i,400,400i,500,600,700,800,900',
     ),
     'Manrope': (
         'family': ('Manrope', sans-serif),
-        'url': 'Manrope:300,400,500,600,700,800',
+        'url': 'Manrope:300,300i,400,400i,500,600,700,800',
     ),
     'Space Grotesk': (
         'family': ('Space Grotesk', sans-serif),
-        'url': 'Space+Grotesk:300,400,500,600,700',
+        'url': 'Space+Grotesk:300,300i,400,400i,500,600,700',
     ),
     'Rajdhani': (
         'family': ('Rajdhani', sans-serif),
-        'url': 'Rajdhani:300,400,500,600,700',
+        'url': 'Rajdhani:300,300i,400,400i,500,600,700',
     ),
     'JetBrains Mono': (
         'family': ('JetBrains Mono', monospace),
@@ -46,8 +44,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        // D&D Partners - Tech Blue Dark Theme
-        'color-palettes-name': 'default-1',
+        'color-palettes-name': 'ded-partners-1',
         'logo-height': (56 / 16) * 1rem,
         'fixed-logo-height': (48 / 16) * 1rem,
         'header-font-size': .9375rem,
@@ -63,19 +60,16 @@ $o-website-values-palettes: (
         'font': 'Inter',
         'headings-font': 'Manrope',
         'navbar-font': 'Inter',
-        'header-template': 'hamburger',
+        'header-template': 'default',
         'footer-template': 'contact',
         'link-underline': 'never',
         'navbar-fixed': true,
     ),
 );
 
-// ---- Custom D&D Brand Palette ----
-// Color 1 (primary): Deep Blue
-// Color 2 (secondary): Electric Blue
-// Color 3 (accent): Orange/Gold
-// Color 4 (light bg): Near-white
-// Color 5 (dark): Near-black
+//------------------------------------------------------------------------------
+// Custom D&D Brand Palette
+//------------------------------------------------------------------------------
 
 $o-palette-priority-prefix: 'ded-partners';
 
@@ -83,30 +77,30 @@ $o-color-palettes: map-merge($o-color-palettes, (
     'ded-partners-1': (
         1: #1B3C73,   // Deep Navy Blue (primary)
         2: #2563EB,   // Electric Blue (secondary)
-        3: #E07B1A,   // Orange accent (from logo)
-        4: #F0F4FF,   // Light blue-white bg
+        3: #E07B1A,   // Orange accent
+        4: #F0F4FF,   // Light blue-white
         5: #0A0F1E,   // Very dark navy
     ),
     'ded-partners-2': (
-        1: #0F2354,   // Darker navy
-        2: #1D4ED8,   // Royal Blue
-        3: #F59E0B,   // Amber/Gold
-        4: #EFF6FF,   // Ice white
-        5: #060B18,   // Almost black
+        1: #0F2354,
+        2: #1D4ED8,
+        3: #F59E0B,
+        4: #EFF6FF,
+        5: #060B18,
     ),
     'ded-partners-3': (
-        1: #1A3A6B,   // Brand Blue
-        2: #3B82F6,   // Bright Blue
-        3: #EA6C00,   // Deep Orange
-        4: #F8FAFF,   // Off white
-        5: #111827,   // Dark grey
+        1: #1A3A6B,
+        2: #3B82F6,
+        3: #EA6C00,
+        4: #F8FAFF,
+        5: #111827,
     ),
     'ded-partners-4': (
-        1: #1E40AF,   // Indigo Blue
-        2: #60A5FA,   // Light Blue
-        3: #FB923C,   // Light Orange
-        4: #FFFFFF,   // Pure white
-        5: #1F2937,   // Dark
+        1: #1E40AF,
+        2: #60A5FA,
+        3: #FB923C,
+        4: #FFFFFF,
+        5: #1F2937,
     ),
 ));
 
@@ -119,14 +113,13 @@ $o-color-palettes-compatibility-indexes: (
     6: 'generic-2',
     7: 'generic-3',
     8: 'generic-4',
+    9: 'generic-5',
+    10: 'generic-6',
 );
 
 //------------------------------------------------------------------------------
-// Shapes / Background Decorations
+// Shapes
 //------------------------------------------------------------------------------
 
-$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Origins/02_001', (5: 3));
-$o-bg-shapes: add-extra-shape-colors-mapping('html_builder', 'Origins/02_001', 'second', (4: 4, 5: 2));
-$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Wavy/08', (2: 2));
-$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Blobs/04', (5: 5));
 $o-bg-shapes: change-shape-colors-mapping('html_builder', 'Airy/01', (1: 3));
+$o-bg-shapes: change-shape-colors-mapping('html_builder', 'Blobs/04', (5: 5));
