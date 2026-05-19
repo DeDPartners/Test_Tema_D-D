@@ -1,0 +1,4 @@
+[submodule "DeDPartners/Test_Tema_D-D"]
+	path = DeDPartners/Test_Tema_D-D
+	url = git@github.com:DeDPartners/Test_Tema_D-D.git
+	branch = main
