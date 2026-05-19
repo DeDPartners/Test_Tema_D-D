@@ -825,46 +825,7 @@ footer.o_footer{
     </xpath>
 </template>
 
-<!-- Footer DED -->
-<template id="ded_footer" inherit_id="website.layout" name="D&amp;D Footer">
-    <xpath expr="//footer" position="replace">
-        <footer class="o_footer">
-            <div class="ded-foot">
-                <div class="ded-foot-brand">
-                    <div style="display:flex;align-items:center;gap:10px;font-weight:600;font-size:18px;letter-spacing:-.02em;margin-bottom:14px;">
-                        <span class="ded-logo-mark">D</span>
-                        <span>D&amp;D Partners</span>
-                    </div>
-                    <p>Engineering tomorrow's software per il settore pubblico, healthcare e privato.</p>
-                </div>
-                <div>
-                    <h5>Servizi</h5>
-                    <a href="/servizi">AI Agents</a>
-                    <a href="/servizi">Odoo</a>
-                    <a href="/servizi">Sviluppo custom</a>
-                    <a href="/servizi">Dashboard &amp; Data</a>
-                </div>
-                <div>
-                    <h5>Azienda</h5>
-                    <a href="/chi-siamo">Chi Siamo</a>
-                    <a href="/portfolio">Portfolio</a>
-                    <a href="/contatti">Contatti</a>
-                </div>
-                <div>
-                    <h5>Social</h5>
-                    <a href="https://www.linkedin.com/company/dedpartners/" target="_blank">LinkedIn ↗</a>
-                    <a href="https://github.com/DeDPartners" target="_blank">GitHub ↗</a>
-                </div>
-            </div>
-            <div class="ded-foot-bottom">
-                <div>© <t t-esc="datetime.datetime.now().year"/> D&amp;D Partners S.r.l. — Tutti i diritti riservati — P.IVA IT05355160283</div>
-                <div class="iso">
-                    <span>ISO 9001</span><span>ISO 27001</span><span>GDPR</span>
-                </div>
-            </div>
-        </footer>
-    </xpath>
-</template>
+<!-- Footer: styled via CSS only (no xpath on footer templates to avoid errors) -->
 
 <!-- Global JS -->
 <template id="ded_global_js" inherit_id="website.layout" name="D&amp;D Global JS">
