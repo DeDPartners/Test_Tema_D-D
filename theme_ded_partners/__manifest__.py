@@ -47,6 +47,16 @@
     'website': 'https://www.dedpartners.com',
     'license': 'LGPL-3',
     'assets': {
+        'web._assets_primary_variables': [
+            'theme_ded_partners/static/src/scss/primary_variables.scss',
+        ],
+        ('prepend', 'web._assets_frontend_helpers'): [
+            'theme_ded_partners/static/src/scss/bootstrap_overridden.scss',
+        ],
+        'website.assets_frontend': [
+            'theme_ded_partners/static/src/scss/theme.scss',
+            'theme_ded_partners/static/src/js/ded_effects.js',
+        ],
         'website.assets_editor': [
             'theme_ded_partners/static/src/js/tour.js',
         ],

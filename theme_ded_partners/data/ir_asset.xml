@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<asset id="theme_ded_partners.primary_variables_scss" name="D&amp;D Partners Primary Variables SCSS">
-    <field name="key">theme_ded_partners.primary_variables_scss</field>
-    <bundle>web._assets_primary_variables</bundle>
-    <path>theme_ded_partners/static/src/scss/primary_variables.scss</path>
-</asset>
+    <record id="ded_primary_variables_scss" model="ir.asset">
+        <field name="name">D&amp;D Partners - Primary Variables SCSS</field>
+        <field name="key">theme_ded_partners.primary_variables_scss</field>
+        <field name="bundle">web._assets_primary_variables</field>
+        <field name="path">theme_ded_partners/static/src/scss/primary_variables.scss</field>
+    </record>
 
-<asset id="theme_ded_partners.bootstrap_overridden_scss" name="D&amp;D Partners Bootstrap Overridden SCSS">
-    <field name="key">theme_ded_partners.bootstrap_overridden_scss</field>
-    <bundle directive="prepend">web._assets_frontend_helpers</bundle>
-    <path>theme_ded_partners/static/src/scss/bootstrap_overridden.scss</path>
-</asset>
+    <record id="ded_bootstrap_overridden_scss" model="ir.asset">
+        <field name="name">D&amp;D Partners - Bootstrap Overridden SCSS</field>
+        <field name="key">theme_ded_partners.bootstrap_overridden_scss</field>
+        <field name="bundle">web._assets_frontend_helpers</field>
+        <field name="path">theme_ded_partners/static/src/scss/bootstrap_overridden.scss</field>
+        <field name="directive">prepend</field>
+    </record>
 
-<asset id="theme_ded_partners.theme_scss" name="D&amp;D Partners Theme SCSS">
-    <field name="key">theme_ded_partners.theme_scss</field>
-    <bundle>website.assets_frontend</bundle>
-    <path>theme_ded_partners/static/src/scss/theme.scss</path>
-</asset>
+    <record id="ded_theme_scss" model="ir.asset">
+        <field name="name">D&amp;D Partners - Theme SCSS</field>
+        <field name="key">theme_ded_partners.theme_scss</field>
+        <field name="bundle">website.assets_frontend</field>
+        <field name="path">theme_ded_partners/static/src/scss/theme.scss</field>
+    </record>
 
-<asset id="theme_ded_partners.effects_js" name="D&amp;D Partners Effects JS">
-    <field name="key">theme_ded_partners.effects_js</field>
-    <bundle>website.assets_frontend</bundle>
-    <path>theme_ded_partners/static/src/js/ded_effects.js</path>
-</asset>
+    <record id="ded_effects_js" model="ir.asset">
+        <field name="name">D&amp;D Partners - Effects JS</field>
+        <field name="key">theme_ded_partners.effects_js</field>
+        <field name="bundle">website.assets_frontend</field>
+        <field name="path">theme_ded_partners/static/src/js/ded_effects.js</field>
+    </record>
 
 </odoo>
